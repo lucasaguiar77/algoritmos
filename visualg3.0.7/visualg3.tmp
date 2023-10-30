@@ -1,0 +1,21 @@
+Algoritmo "AnalisadorDeNomes"
+
+Var
+  n :caractere
+  c :inteiro
+Inicio
+      Escreva("Digite seu nome: ")
+      Leia(n)
+      Escreval("Total de letras no seu nome:", compr(n))
+      Escreval("Seu nome em maiusculo: ", maiusc(n))
+      Escreval("Seu nome em minusculo: ", minusc(n))
+      Escreval("A primeira letra do seu nome é: ", copia(maiusc(n), 1, 1))
+      Escreval("A ultima letra so seu nome é: ", copia(maiusc(n), compr(n), 1))
+      Escreval("Seu nome tem a letra A na posição ", pos("A", maiusc(N)))
+      Escreval("O código da letra A é: ", asc("A"))
+      Escreval("A letra de código 65 é: ", carac(65))
+      
+      para c <- compr(n) ate 1 passo -1 faca
+           Escreva("Seu nome de trás para frente é:",copia(maiusc(n),c,1))
+      fimpara
+Fimalgoritmo
